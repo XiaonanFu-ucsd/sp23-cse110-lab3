@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/favicon.ico">
+    <title>The first meeting</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#attendance">Attendance</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#unfinished">Unfinished business from last meeting</a>
+        <a href="#new">New business</a>
+        <a href="#misc">Misc.</a>
+    </nav>
+
+    <header>
+        <h1>The first meeting</h1>
+        <h2>Documentation</h2>
+        <h2>Date: 3/12/2020</h2>
+    </header>
+
+    <section id="attendance">
+        <h3>Attendance</h3>
+        <ul>
+            <li>John</li>
+            <li>Bob</li>
+            <li>Tom</li>
+        </ul>
+    </section>
+    <section id="agenda">
+        <h3>Agenda</h3>
+        <ol>
+            <li>Introduction</li>
+            <li>Project description</li>
+            <li>Project plan</li>
+        </ol>
+    </section>
+    <section id="unfinished">
+        <h3>Unfinished business from last meeting</h3>
+        <ul>
+            <li>Group warn up</li>
+        </ul>
+    </section>
+    <section id="new">
+        <h3>New business</h3>
+        <ul>
+            <li>Project description</li>
+            <li>Project plan</li>
+        </ul>
+    </section>
+    <section id="misc">
+        <h3>Misc.</h3>
+        <ul>
+            <li>The next meeting time</li>
+            <li>Project due date</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <main>
+        <div>
+            <h3>Details</h3>
+            <p>The team members gathered in the <b>school’s conference room</b> and <strong>brainstorming ideas for the project</strong>. The project aims to provide a fun and interactive learning experience for students.</p>
+            <p>The team discussed the <i>project’s objectives</i> and the <em>resources that would be required</em> to achieve them. They also discussed the project’s timeline and budget constraints. </p>
+            <br><br>
+            <p>After going through a number of ideas and discarding some of them, the team finally settled on the idea of creating a virtual field trip that would enable students to explore the world of the animal kingdom. They decided to design the project
+                to be interactive and educational, allowing students to experience virtual animal encounters through <span>3D and AR technology.</span></p>
+        </div>
+        <hr>
+        <div>
+            <h3>Pictures</h3>
+            <div>
+                <img src="./public/cat.webp" width="500" height="333" alt="cat">
+                <img src="./public/cat.webp" width="500" height="333" alt="cat">
+            </div>
+        </div>
+
+        <div>
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="./public/audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div>
+            <h3>Video</h3>
+            <video width="500" height="333" controls>
+                <source src="./public/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <details>
+            <summary>Project plan</summary>
+            <div>
+                <p>Paragraph 1: As the lead project manager of the school programming initiative, it is my responsibility to ensure that the project is completed on time and within budget. To that end, I have outlined a comprehensive project plan that includes
+                    identifying potential partners and vendors, creating a marketing strategy to reach out to the community and promote the project, and managing the overall project progress.</p>
+                <p>Paragraph 2: The school programming project requires the involvement of various stakeholders, including faculty, students, and parents. Throughout the project, it is my job to ensure that all of the stakeholders are engaged in the decision-making
+                    process and their feedback is taken into consideration. To that end, I have developed a detailed communication plan to ensure that the project is well-coordinated and all stakeholders are on the same page.</p>
+                <p>
+                    Paragraph 3: In order to ensure that the project stays on budget, it is my responsibility to track the project's progress and make adjustments as necessary. To that end, I have put in place a detailed financial tracking system that allows me to quickly
+                    identify any potential issues and address them accordingly.
+                </p>
+                <p>Paragraph 4: The school programming project is a long-term initiative that requires sustained effort and attention. To ensure that the project remains successful, I have developed a comprehensive maintenance plan that will ensure that
+                    the project is sustainable and the resources are utilized effectively.</p>
+                <p>Paragraph 5: In order to ensure the success of the school programming project, I have put in place a detailed quality control process. This process will include conducting regular check-ins, identifying any potential issues before they
+                    arise, and ensuring that all quality control measures are put in place to ensure the success of the project.</p>
+            </div>
+        </details>
+    </main>
+
+    <form>
+        <h1>FORM</h1>
+        <fieldset>
+            <legend>Personal information:</legend>
+            First name:<br>
+            <input type="text" name="firstname" value="Bob"><br> Last name:<br>
+            <input type="text" name="lastname" value="White"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </fieldset>
+        <br><br>
+        <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+
+        <br><br>
+        <input list="browsers" name="browser">
+        <datalist id="browsers" name="browsers" multiple>
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <select name="browser">
+            <option value="Internet Explorer" selected>IE</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+        </select>
+        <br><br>
+        <button type="button">reset</button>
+    </form>
+    <br><br>
+
+    <footer><small>Recored by Alice and Bob. 2020. </small></footer>
+
+</body>
+
+</html>
