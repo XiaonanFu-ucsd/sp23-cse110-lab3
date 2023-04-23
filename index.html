@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./public/favicon.ico">
     <title>The first meeting</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     </nav>
 
     <header>
-        <h1>The first meeting</h1>
+        <h1 id="Title">The first meeting</h1>
         <h2>Documentation</h2>
         <h2>Date: 3/12/2020</h2>
     </header>
@@ -27,9 +28,9 @@
     <section id="attendance">
         <h3>Attendance</h3>
         <ul>
-            <li>John</li>
-            <li>Bob</li>
-            <li>Tom</li>
+            <li class="people-name">John</li>
+            <li class="people-name">Bob</li>
+            <li class="people-name">Tom</li>
         </ul>
     </section>
     <section id="agenda">
@@ -40,7 +41,7 @@
             <li>Project plan</li>
         </ol>
     </section>
-    <section id="unfinished">
+    <section id="unfinished" class="meeting-info">
         <h3>Unfinished business from last meeting</h3>
         <ul>
             <li>Group warn up</li>
@@ -75,7 +76,10 @@
         <hr>
         <div>
             <h3>Pictures</h3>
-            <div>
+            <div id="pics">
+                <img src="./public/cat.webp" width="500" height="333" alt="cat">
+                <img src="./public/cat.webp" width="500" height="333" alt="cat">
+                <img src="./public/cat.webp" width="500" height="333" alt="cat">
                 <img src="./public/cat.webp" width="500" height="333" alt="cat">
                 <img src="./public/cat.webp" width="500" height="333" alt="cat">
             </div>
@@ -117,10 +121,11 @@
 
     <form>
         <h1>FORM</h1>
-        <fieldset>
+        <fieldset id="pinfo">
             <legend>Personal information:</legend>
-            First name:<br>
-            <input type="text" name="firstname" value="Bob"><br> Last name:<br>
+            <span>First name:</span><br>
+            <input type="text" name="firstname" value="Bob"><br>
+            <span>Last name:</span><br>
             <input type="text" name="lastname" value="White"><br><br>
             <input type="submit" value="Submit">
             <input type="reset">
@@ -148,6 +153,10 @@
         <button type="button">reset</button>
     </form>
     <br><br>
+
+    <div id="funbox">xxxxxx</div>
+    <div id="funbox2">xxxxxx</div>
+    <div id="funbox3">xxxxxx</div>
 
     <footer><small>Recored by Alice and Bob. 2020. </small></footer>
 

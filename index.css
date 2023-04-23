@@ -1,0 +1,169 @@
+/* This css file describes the style of the index page. */
+
+@font-face {
+    font-family: 'jjj';
+    src: url('./public/Roboto-Regular.ttf');
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    min-height: 5vw;
+    max-height: 20vh;
+    background-color: gray;
+    padding-left: 5pc;
+    padding-top: 5pt;
+}
+
+.people-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    font-family: jjj;
+}
+
+.people-name:hover {
+    color: red;
+    text-decoration: none;
+    margin: 10px 0px 10px 0px;
+}
+
+.people-name:active {
+    background-color: yellow;
+}
+
+#Title {
+    font-size: 5em;
+    font-weight: bold;
+    color: rgb(100, 20, 40);
+    position: relative;
+    left: 100px;
+    font-family: jjj;
+}
+
+*[href="#attendance"] {
+    color: hsl(7, 96%, 50%);
+    font-size: large;
+}
+
+a[href*="agenda"] {
+    color: #1b9e1b;
+}
+
+a,
+p {
+    font-size: 16px;
+    color: #000;
+}
+
+nav a {
+    margin-left: 0.5cm;
+    padding-top: 3mm;
+}
+
+nav a:hover {
+    background-color: yellow;
+}
+
+#agenda>h3 {
+    color: red;
+    padding-left: 1in;
+}
+
+h1~h2 {
+    color: red;
+    margin: auto;
+}
+
+h3+ul {
+    color: brown;
+    display: inline-block;
+}
+
+section.meeting-info {
+    font-size: 100px;
+    color: red;
+    background-color: yellow;
+}
+
+#funbox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #1b9e1b;
+    max-width: 200px;
+    min-width: none;
+    display: inline-block;
+}
+
+#funbox2 {
+    /* margin: 10px 10px 10px 10px; */
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    width: 100px;
+    height: 40px;
+    background-color: #1b9e1b;
+    border-radius: 5px;
+    border-color: #000;
+    border-width: 5px;
+    border-style: solid;
+    color: yellow;
+    text-decoration: overline;
+    text-align: center;
+    display: block;
+}
+
+#funbox3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    display: inline;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+#pics {
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#pics img {
+    margin-right: 10px;
+}
+
+#pinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: none;
+    grid-gap: 10px;
+}
+
+#pinfo>input {
+    min-height: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: lightblue;
+    }
+}
